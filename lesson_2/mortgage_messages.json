@@ -1,6 +1,6 @@
 {
     "English": {
-        "invalid_language": "Invalid input. Please select a number from the options provided.",
+        "invalid_language": "Invalid input. Please select a number from the options provided.\nEntrada no válida. Seleccione un número entre las opciones proporcionadas.\n输入无效。请从提供的选项中选择一个数字。",
         "negative_number": "Value must be > 0: ",
         "welcome": "******* Welcome to the mortgage calculator! *******",
         "what_is_loan_amount": "What is the loan amount?",
