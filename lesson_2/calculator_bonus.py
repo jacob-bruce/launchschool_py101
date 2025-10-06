@@ -3,7 +3,7 @@
 # Ask the user for an operation to perform.
 # Perform the operation on the two numbers.
 # Print the result to the terminal.
-LANGUAGE = 'zh'
+LANGUAGE = 'en'
 import json
 
 with open('calculator_messages.json', 'r') as file:
@@ -14,7 +14,7 @@ def prompt(message):
 
 def invalid_number(number_str):
     try:
-        int(number_str)
+        float(number_str)
     except ValueError:
         return True
     return False
@@ -48,13 +48,13 @@ while True:
 
     match operation:
         case '1':
-            output = int(number1) + int(number2)
+            output = float(number1) + float(number2)
         case '2':
-            output = int(number1) - int(number2)
+            output = float(number1) - int(number2)
         case '3':
-            output = int(number1) * int(number2)
+            output = float(number1) * float(number2)
         case '4':
-            output = int(number1) / int(number2)
+            output = float(number1) / float(number2)
 
     prompt(f'{get_message('result', LANGUAGE)} {output}')
 
