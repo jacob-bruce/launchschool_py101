@@ -1,11 +1,24 @@
 {
-  "welcome": "Welcome to Calculator!",
-  "invalid_number": "Hmm... that doesn't look like a valid number.",
-  "first_number": "What's the first number?",
-  "second_number": "What's the second number?",
-  "choose_operation": "What operation would you like to perform\n1) Add 2) Subtract 3) Multiply 4) Divide",
-  "reject_operation": "You must choose 1, 2, 3, or 4",
-  "result": "The result is: ",
-  "another_operation": "Would you like to perform another operation?\n1) Yes 2) No",
-  "invalid_choice": "You must choose 1 or 2"
+    "en": {
+        "welcome": "Welcome to Calculator!",
+        "invalid_number": "Hmm... that doesn't look like a valid number.",
+        "first_number": "What's the first number?",
+        "second_number": "What's the second number?",
+        "choose_operation": "What operation would you like to perform\n1) Add 2) Subtract 3) Multiply 4) Divide",
+        "reject_operation": "You must choose 1, 2, 3, or 4",
+        "result": "The result is: ",
+        "another_operation": "Would you like to perform another operation?\n1) Yes 2) No",
+        "invalid_choice": "You must choose 1 or 2"
+    },
+    "zh": {
+        "welcome": "欢迎使用计算器！",
+        "invalid_number": "嗯……这看起来不是一个有效的数字。",
+        "first_number": "第一个数字是多少？",
+        "second_number": "第二个数字是多少？",
+        "choose_operation": "您想执行什么操作\n1) 加 2) 减 3) 乘 4) 除",
+        "reject_operation": "你必须选择 1、2、3 或 4",
+        "result": "结果是：",
+        "another_operation": "您想执行其他操作吗？\n1) 是 2) 否",
+        "invalid_choice": "你必须选择 1 或 2"
+    }
 }
