@@ -1,0 +1,44 @@
+{
+    "English": {
+        "invalid_language": "Invalid input. Please select a number from the options provided.",
+        "negative_number": "Value must be > 0: ",
+        "welcome": "******* Welcome to the mortgage calculator! *******",
+        "what_is_loan_amount": "What is the loan amount?",
+        "invalid_number": "Hmm...that doesn't look like a valid number.",
+        "what_is_loan_duration": "What is the loan duration in months?",
+        "what_is_annual_rate": "What is the annual interest rate? Input as a decimal (e.g, 12% as .12)",
+        "your_payment_amount": "Your monthly payment is: ",
+        "your_payoff_date": "If you start paying this month you will pay off the loan in",
+        "another_operation": "Would you like to calculate another monthly payment?\n1) Yes\n2) No",
+        "invalid_choice": "You must choose 1 or 2"
+
+    },
+
+    "Mandarin": {
+        "invalid_language": "输入无效。请从提供的选项中选择一个数字。",
+        "negative_number": "输入无效。请从提供的选项中选择一个数字。",
+        "welcome": "******* 欢迎使用抵押贷款计算器！*******",
+        "what_is_loan_amount": "贷款金额是多少？",
+        "invalid_number": "嗯...这看起来不是一个有效的数字。",
+        "what_is_loan_duration": "贷款期限是多少个月？",
+        "what_is_annual_rate": "年利率是多少？请输入小数（例如: 12% 输入 .12",
+        "your_payment_amount": "您的每月还款额为：",
+        "your_payoff_date": "如果你从本月开始还款，你将在",
+        "another_operation": "您想计算另一笔月付款吗？\n1) 是\n2) 否",
+        "invalid_choice": "您必须选择 1 或 2"
+    },
+
+    "Spanish": {
+        "invalid_language": "Entrada no válida. Seleccione un número entre las opciones proporcionadas.",
+        "negative_number": "Debes elegir 1 o 2",
+        "welcome": "******* ¡Bienvenido a la calculadora de hipotecas! *******",
+        "what_is_loan_amount": "¿Cuál es el monto del préstamo?",
+        "invalid_number": "Hmm...ese no parece un número válido.",
+        "what_is_loan_duration": "¿Cuál es la duración del préstamo en meses?",
+        "what_is_annual_rate": "¿Cuál es la tasa de interés anual? Introdúzcala en decimal (p. ej., 12 % como 0,12).",
+        "your_payment_amount": "Su pago mensual es:",
+        "your_payoff_date": "Si comienzas a pagar este mes, liquidarás el préstamo en",
+        "another_operation": "¿Desea calcular otro pago mensual?\n1) Sí\n2) No",
+        "invalid_choice": "Debes elegir 1 o 2"
+    }
+}
