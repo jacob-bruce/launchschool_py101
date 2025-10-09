@@ -5,6 +5,33 @@ VALID_CHOICES = ['rock', 'paper', 'scissors', 'spock', 'lizard']
 def prompt(message):
     print(f'==> {message}')
 
+def get_choice():
+    while True:
+        prompt(f'Choose one: {', '.join(VALID_CHOICES)}')
+        selection = input().lower()
+
+        if selection in VALID_CHOICES:
+            return selection
+            break
+        elif selection.startswith('r'):
+            selection = 'rock'
+            return selection
+            break
+        elif selection.startswith('l'):
+            selection = 'lizard'
+            return selection
+            break
+        elif selection.startswith('p'):
+            selection = 'paper'
+            return selection
+            break
+        elif selection.startswith('s'):
+            prompt("Sorry—can't tell if you meant 'spock' or 'scissors.' Try again?")
+            continue
+        else:
+            prompt("That's not a valid choice.")
+            continue
+
 def display_winner(player, computer):
     if((player == 'scissors' and (computer == 'paper' or computer == 'lizard')) or
        (player == 'paper' and (computer == 'rock' or computer == 'spock')) or
@@ -21,13 +48,10 @@ def display_winner(player, computer):
     else:
         prompt("It's a tie!")
 
-while True:
-    prompt(f'Choose one: {', '.join(VALID_CHOICES)}')
-    choice = input()
+prompt("*** Welcome to best of five rock, paper, scissors, lizard, spock! ***")
 
-    while choice not in VALID_CHOICES:
-        prompt("That's not a valid choice.")
-        choice = input()
+while True:
+    choice = get_choice()
 
     computer_choice = random.choice(VALID_CHOICES)
 
