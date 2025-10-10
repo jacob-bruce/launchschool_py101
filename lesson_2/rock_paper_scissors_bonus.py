@@ -154,4 +154,4 @@ while computer_score < 3 and player_score < 3:
 if computer_score == 3:
     computer_wins()
 else:
-    player_wins()
+    player_wins
