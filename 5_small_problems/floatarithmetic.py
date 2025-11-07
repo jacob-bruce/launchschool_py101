@@ -29,34 +29,25 @@ Algorithm
 
 """
 
-def float_retriever_1():
+def float_retriever(prompt):
     while True:
-        user_str1 = input('==> Enter the first number: ')
+        user_str = input(prompt)
         try:
-            return float(user_str1)
+            return float(user_str)
         except ValueError:
             print("Please enter a valid number.")
-
-def float_retriever_2():
-    while True:
-        user_str2 = input('==> Enter the second number: ')
-        try:
-            return float(user_str2)
-        except ValueError:
-            print("Please enter a valid number.")
-
 
 def float_operations():
-    user_float1 = float_retriever_1()
-    user_float2 = float_retriever_2()
+    user_float1 = float_retriever('==> Enter the first number: ')
+    user_float2 = float_retriever('==> Enter the second number: ')
 
-    print(f"{user_float1} + {user_float2} = {user_float1 + user_float2}\n"
-          f"{user_float1} - {user_float2} = {user_float1 - user_float2}\n"
-          f"{user_float1} * {user_float2} = {user_float1 - user_float2}\n"
-          f"{user_float1} / {user_float2} = {user_float1 / user_float2}\n"
-          f"{user_float1} // {user_float2} = {user_float1 // user_float2}\n"
-          f"{user_float1} % {user_float2} = {user_float1 % user_float2}\n"
-          f"{user_float1} ** {user_float2} = {user_float1 ** user_float2}\n"
+    print(f"==> {user_float1} + {user_float2} = {user_float1 + user_float2}\n"
+          f"==> {user_float1} - {user_float2} = {user_float1 - user_float2}\n"
+          f"==> {user_float1} * {user_float2} = {user_float1 - user_float2}\n"
+          f"==> {user_float1} / {user_float2} = {user_float1 / user_float2}\n"
+          f"==> {user_float1} // {user_float2} = {user_float1 // user_float2}\n"
+          f"==> {user_float1} % {user_float2} = {user_float1 % user_float2}\n"
+          f"==> {user_float1} ** {user_float2} = {user_float1 ** user_float2}\n"
     )
 
 float_operations()

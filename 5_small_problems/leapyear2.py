@@ -1,12 +1,8 @@
 def is_leap_year(year):
+    """Julian before 1752 (divisible by 4). Gregorian from 1752."""
     if year < 1752:
         return year % 4 == 0
-    else:
-        if year % 400 == 0:
-            return True
-        elif year % 100 == 0:
-            return False
-        return year % 4 == 0
+    return (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0)
 
 print(is_leap_year(1) == False)
 print(is_leap_year(2) == False)

@@ -26,7 +26,6 @@ Algoritm
 - For each character, find the UTF-16 value
 - Append the UTF-16 value to a list
 - Sum the list
-
 """
 
 def utf16_value(user_string):
@@ -39,3 +38,15 @@ print(utf16_value('Four score') == 984)
 print(utf16_value('Launch School') == 1251)
 print(utf16_value('a') == 97)
 print(utf16_value('') == 0)
+
+"""
+Feedback:
+
+Logic simplification: You don’t need to build a list first. 
+Summing directly reads a bit more clearly with fewer moving parts:
+
+Using a generator expression: def utf16_value(s): return sum(ord(ch) for ch in s)
+
+
+Or with a running total: def utf16_value(s): total = 0 for ch in s: total += ord(ch) return total
+"""
