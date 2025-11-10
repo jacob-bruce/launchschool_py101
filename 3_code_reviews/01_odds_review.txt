@@ -1,0 +1,15 @@
+Great job with the code. A few minor adjustments and we can make it even better and more concise.
+
+First thing is that the code as written didn't quite meet the specifications. You'll notice that the instructions called for the code printing odd numbers inclusive of 99. Since you used the '<' sign instead of the '<=' sign your while function doesn't include 99—an easy fix.
+
+Aside from that the code is overall relatively easy to read and follow. One thing you could consider is a more descriptive variable name. For example, instead of 'i' you could use a variable name like 'number.'
+
+It's possible to be more concise with a problem like this as well. Starting with the last line of your code, instead of 'i = i + 1' a Python convention would be to use a compound operator: 'i += 1'
+
+Using a for loop and a range function would also help with conciseness:
+
+for number in range(1, 100):
+    if number % 2 == 1:
+        print(number)  
+
+As you can see this is shorter by a number of lines and easier to follow.
