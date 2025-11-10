@@ -28,12 +28,12 @@ Algorithm
 """
 
 def oddities(lst):
-    odd_lst = []
-    odd_lst.append(lst[0])
-    for i in range(0, len(lst)):
-        if i % 2 == 0:
-            odd_lst.append(lst[i])
+    result = []
+    for idx in range(0, len(lst), 2):
+        result.append(lst[idx])
+    return result
 
+print(oddities([2, 3, 4, 5, 6]))
 print(oddities([2, 3, 4, 5, 6]) == [2, 4, 6])  # True
 print(oddities([1, 2, 3, 4]) == [1, 3])        # True
 print(oddities(["abc", "def"]) == ['abc'])     # True
