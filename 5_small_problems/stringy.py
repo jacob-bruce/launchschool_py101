@@ -16,14 +16,13 @@ Algorithm:
 
 def stringy(n):
     result = ''
-    for _ in range(n):
-        if _ % 2:
+    for i in range(n):
+        if i % 2:
             result += '0'
         else:
             result += '1'
     return result
 
-print(stringy(6))
 print(stringy(6) == "101010")           # True
 print(stringy(9) == "101010101")        # True
 print(stringy(4) == "1010")             # True

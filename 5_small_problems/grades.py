@@ -39,7 +39,7 @@ def get_grade(grade1, grade2, grade3):
     elif score >= 60:
         return 'D'
     else:
-        return 'D'
+        return 'F'
 
 print(get_grade(95, 90, 93) == "A")      # True
 print(get_grade(50, 50, 95) == "D")      # True
